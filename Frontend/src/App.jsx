@@ -9,6 +9,7 @@ import { Toaster } from 'react-hot-toast';
 import Home from './Pages/Home/Home ';
 import PrivateRoute from './Component/PrivateRoute';
 import OtpVerification from './Component/otpVerification/otpVerification';
+import VideoCardGrid from './Component/VideoCards/VideoCardGrid';
 
 
 const App = () => {
@@ -28,6 +29,7 @@ const App = () => {
         <Route path='/' element={<Login />} />
         <Route path='/signup' element={<SignUp />} />
         <Route path='/otp' element={<OtpVerification />} />
+        <Route path='/videos' element={<VideoCardGrid />} />
         <Route path='/home' element={
           <PrivateRoute>
             <Home sidebar={sidebar} />
